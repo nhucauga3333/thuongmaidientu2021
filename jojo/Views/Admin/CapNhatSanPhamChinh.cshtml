@@ -1,4 +1,5 @@
 ﻿@using jojo.Models
+@using jojo.DTO
 @{
     sanpham sp = ViewBag.sanpham as sanpham;
     Layout = null;
@@ -14,12 +15,12 @@
     <title>CapNhatSanPhamChinh</title>
     <script>
 
-   function Xoa(id) {
-       var r = confirm("Bạn có chắc muốn xóa");
-       if (r == true) {
-           window.location = "/Admin/XoaSanPham2?id=" + id;
-       }
-   }
+        function Xoa(id) {
+            var r = confirm("Bạn có chắc muốn xóa");
+            if (r == true) {
+                window.location = "/Admin/XoaSanPham2?id=" + id;
+            }
+        }
 
         $(document).ready(function () {
             $('form').submit(function () {
